@@ -1,18 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Esercitazione
 {
-    internal class Atleta
+    internal class Dipendente
     {
         string nome;
         string cognome;
-        string sport;
-
+        string azienda;
 
         public string Nome
         {
@@ -25,20 +23,19 @@ namespace Esercitazione
             get { return cognome; }
             set { cognome = value; }
         }
-
-        public string Sport
+        public string Azienda
         {
-            get { return sport; }
-            set { sport = value; }
+            get { return azienda; }
+            set { azienda = value; }
         }
 
-        public void descrizione()
+        public void descrizionedipendente()
         {
             Console.WriteLine(nome);
             Console.WriteLine(cognome);
-            Console.WriteLine(sport);
-            Console.WriteLine("Mi chiamo" + "" + nome + " " + cognome + " e pratico " + sport);
+            Console.WriteLine(azienda);
+            Console.WriteLine("Mi chiamo" + "" + nome + " " + cognome + " e lavoro in " + azienda);
         }
-
     }
+
 }
