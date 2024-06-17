@@ -19,6 +19,19 @@ namespace Esercitazione
             get { return nome; }
             set { nome = value; }
         }
+
+        public string Cognome
+        {
+            get { return cognome; }
+            set { cognome = value; }
+        }
+
+        public string Sport
+        {
+            get { return sport; }
+            set { sport = value; }
+        }
+
         public void descrizione()
         {
             Console.WriteLine(nome);
